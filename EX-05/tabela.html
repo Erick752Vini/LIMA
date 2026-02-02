@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela</title>
 </head>
 <body>
     <h1>CLASSIFICAÇÃO</h1>
@@ -91,5 +91,48 @@
 
         </thead>
     </table>
+
+    <br><br>
+
+    <h1>Responda</h1>
+
+    <form method="POST" action="processar.php">
+        <fieldset>
+
+            <legend>Dados do seu time</legend>
+
+            <label for="nome">Nome Completo:</label>
+            <input type="email" id="nome" name="nome" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="18" max="120">
+
+            <br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Termos</legend>
+            <label for="termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                Aceito os temos de serviço
+            </label>
+        </fieldset>
+
+        <br><br>
+
+        <button>Enviar</button>
+
 </body>
 </html>
